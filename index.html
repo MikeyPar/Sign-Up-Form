@@ -12,21 +12,40 @@
     <div class="left"><img src="./pics/smallLeaves.jpg" alt="" width=""></div>
     <div class="right">
         <div class="top">
-            <p>can you please stop being a dick to Wes. it's his server. his rules. stop disobeying daddy and apologize. are we clear?</p>
+            <p>Can you please stop being a dick to Wes. It's his server. His rules. Stop disobeying daddy and apologize. Are we clear?</p>
         </div>
         <div class="mid">
-            <p>Give me your info</p>
-            <form action="http://httpbin.org/post" method="post">
-                <input type="text" id="Firstname" placeholder="First Name" required> 
-                <input type="text" id="Lastname" placeholder="Last Name" required>
-                <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
-                <input type="tel" id="phone_number" name="phone_number" placeholder="Phone Number" required>
-                <input type="password" id="pass" placeholder="Password" required>
-                <input type="password" id="pass" placeholder="Confirm Password" required>
+            <p>Let's do this!</p>
+            <form action="http://httpbin.org/post" method="post" id="form">
+                <div id="First">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="Firstname" name="first_name" placeholder="First Name" required> 
+                </div>
+                <div id="Last">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="Lastname" name="last_name" placeholder="Last Name" required>
+                </div>
+                <div id="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div id="phone">
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" id="phone_number" name="phone_number" placeholder="Phone Number" required>
+                </div>
+                <div id="password">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="password" placeholder="Password" required>
+                </div>
+                <div id="confirm">
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" id="confirm" placeholder="Confirm Password" required>
+                </div>
+
             </form>
         </div>
         <div class="bot">
-            <button id="acc" type="submit">Create Account</button>
+            <button id="acc" form="form" type="submit">Create Account</button>
             <p>Already have an account? <a href="http://127.0.0.1:5500/index.html">Log in</a></p>
         </div>
     </div>

@@ -23,12 +23,6 @@ body {
     justify-content: center;
 }
 
-.top,
-.mid,
-.bot {
-
-}
-
 .top {
     margin: 40px;
 }
@@ -44,11 +38,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: white;
+    background-color:gainsboro;
 }
 
 .mid p {
-    margin-left: 195px;
+    margin-left: 25px;
+    font-size: larger;
 }
 
 .left {
@@ -65,15 +60,27 @@ form {
     flex-grow: 1;
     flex-wrap: wrap;
     height: 205px;
-    width: 500px;
+    width: 800px;
     align-content: space-around;
-    justify-content: space-around;
+    margin-left: 30px;
+    margin-bottom: 16px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px;
 }
 
 input {
     height: 25px;
-    width: 200px;
+    width: 250px;
     margin: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
 .bot {
@@ -85,4 +92,6 @@ input {
 button#acc {
     width: 166px;
     height: 46px;
+    border-radius: 8px;
+    background-color: #596D48;
 }
